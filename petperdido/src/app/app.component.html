@@ -1,0 +1,65 @@
+<section [ngClass]="{ativa: menuVisivel}">
+  <h1 (click)="alternarMenu()" >Cadastro</h1>
+
+
+  <form >
+
+    <div class="form-group">
+        Ocorrência:
+        <select [(ngModel)]="dados.ocorrencia" name="ocorrencia" class="form-control">
+            <option value="Achado">Achado</option>
+            <option value="Perdido">Perdido</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+       Tipo de Animal: <input [(ngModel)]="dados.tipo" class="form-control" type="text" name="tipo" placeholder="Cachorro, Gato, etc." >
+    </div>
+
+    <div class="form-group">
+       Raça: <input [(ngModel)]="dados.raca" class="form-control" type="text" name="raca" placeholder= "" >
+    </div>
+
+    <div class="form-group">
+        Cor: <input [(ngModel)]="dados.cor" class="form-control" type="text" name="cor" placeholder= "" >
+    </div>
+        
+    <div class="form-group">
+        Sexo: <input [(ngModel)]="dados.sexo" class="form-control" type="sexo" name="sexo" placeholder= "Macho ou Fêmea" >
+    </div>
+
+    <div class="form-group">
+        Local: <input [(ngModel)]="dados.local" class="form-control" type="text" name="local" placeholder= " Endereço / Cidade / Estado" >
+    </div>
+
+    <div class="form-group mb-4">
+        Foto: <input [(ngModel)]="dados.foto" class="form-control" type="foto" name="foto" placeholder= "Link da Internet" >
+    </div>
+
+    <div class="botoes">
+    <button (click)="inserir()" class="btn btn-secondary">Salvar</button>  
+    <button (click)="limpar()" class="btn btn-danger">Limpar</button>
+    </div>
+
+  </form>
+</section>
+
+    <p>Pet Perdido <img src="assets/petperdido.png"></p>
+
+
+<div [ngClass]="{ativaq: menuVisivel}" class="quadros">
+    <div class="quadroAchados">
+        <h2>Achados</h2>
+        <!-- pega todos os objetos da lista e poe em cards separados ex. se o vetor lista tiver 5 posições, com 5 objetos diferentes, ele cria 5 cards com os dados da lista-->
+        <app-card *ngFor="let cardAchados of listaAchados" [dadosCard]="cardAchados"></app-card>
+        
+    </div>
+      
+    <div class="quadroPerdidos">
+        <h2>Perdidos</h2>
+        <!-- pega todos os objetos da lista e poe em cards separados ex. se o vetor lista tiver 5 posições, com 5 objetos diferentes, ele cria 5 cards com os dados da lista-->
+        <app-card *ngFor="let cardPerdidos of listaPerdidos" [dadosCard]="cardPerdidos"></app-card>   
+        
+    </div>
+</div>
+

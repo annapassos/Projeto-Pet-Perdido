@@ -1,0 +1,113 @@
+h1{
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 32 px;
+}
+
+section{
+    margin-top: 6.5rem;
+    width: 400px;
+    background-color: black;
+    height: 100vh;
+    transform: translateX(-90%);         /*  rotaciona no eixo x  */
+    transition: 1s;                      /*  faz de forma suave, em 1 seg  */
+    position: absolute;
+}
+
+section.ativa{
+    transform: translateX(0);
+}
+
+form{
+    margin-right: 50px;
+    padding: 10px;
+}
+
+
+.form-group{
+    margin-left: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.menu{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.quadroAchados{
+    padding-left: 80px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-content: flex-start 
+
+}
+
+.quadroPerdidos{
+    padding-left: 80px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-content: flex-start 
+}
+
+
+.btn {
+    color: #fff;
+    width: 49%;
+}
+
+
+.btn-block {
+    display: block;
+    margin-bottom: 1rem;
+    width: 45%;
+}
+
+.quadros {
+    display: flex;
+    transition: 1s; 
+    width: 100vh;
+}
+
+.ativaq {
+    margin-left: 350px;
+    width: 100vh;
+
+}
+
+
+p {
+height: 100px;
+width: 100vw;
+color: white;
+text-align: center;
+padding: 10px;
+padding-right: 41px;
+font-size: 3em;
+background-color: black;
+overflow-x: hidden;
+}
+
+img{
+height: 60px
+}
+
+
+h2 {
+    font-size: 2rem;
+    width: 90vh;
+    height: 4rem;
+    background-color: lightgray;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.botoes{
+    margin-left: 2rem
+}

@@ -1,0 +1,40 @@
+:host{
+    margin: 20px 1%;
+    margin-left:2px;
+}
+
+div{
+    width: 300px;
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: grey;
+    padding: 0 10px;
+    margin-left: 25px;
+}
+
+div h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+img{
+    width: 250px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+
+div[_ngcontent-c1] h3[_ngcontent-c1] {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
